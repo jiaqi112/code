@@ -1,0 +1,672 @@
+/* 清除样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+/*横线 */
+.line {
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+  bottom: 0;
+  min-width: 1440px;
+}
+/* 顶部 */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.md {
+  width: 1050px;
+}
+/* 顶部左边log */
+.logMes {
+  width: 270px;
+  height: 70px;
+  display: flex;
+}
+
+.top .logMes img {
+  display: inline;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.top .logMes span h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.top .logMes span h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.top .logMes span h3 {
+  font-size: 18px;
+  padding-top: 10px;
+}
+/* 顶部中间搜索框 */
+.top .serch {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid #00b0ff;
+  box-sizing: border-box;
+}
+.top .serch input {
+  width: 210px;
+  height: 100%;
+  border-radius: 20px;
+  border: 0px;
+  outline: none;
+}
+.top .serch .serchRight {
+  width: 90px;
+  height: 40px;
+  background: #00b0ff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: -1px;
+}
+.top .serch .serchRight a {
+  color: #ffffff;
+}
+.top .state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.top .state span:nth-child(2) {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.top .state a {
+  color: #9f9f9f;
+}
+.top .state a:nth-child(3) {
+  padding-right: 20px;
+}
+
+.top .state .specialist {
+  border-radius: 20px;
+  background: #00b0ff;
+  color: #ffffff;
+  height: 20px;
+  width: 50px;
+  text-align: center;
+  line-height: 20px;
+}
+.adv {
+  background: #30363c;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 1440px;
+}
+.adv ul {
+  display: flex;
+  line-height: 50px;
+}
+.adv ul li {
+  padding: 0 20px;
+  height: 50px;
+}
+.adv ul li:nth-child(1) {
+  width: 100px;
+  height: 50px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.adv ul li a {
+  color: #9f9f9f;
+}
+.adv ul li .home-page {
+  color: #00b0ff;
+}
+.adv ul li:hover {
+  background: rgb(0, 0, 0);
+}
+.adv ul li:nth-child(1):hover {
+  background: #ffffff;
+}
+
+/* 缪佳耕 修改 */
+
+/* flex居中方式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1050px;
+  overflow-x: scroll;
+}
+
+.adv ul {
+  width: 1050px;
+  justify-content: space-between;
+}
+
+/* 广告图 */
+.container .ad .ad-img {
+  position: absolute;
+  left: 0;
+  background: url("./image/ad.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 1050px;
+}
+/* 通知 */
+.container .inform {
+  width: 1440px;
+  height: 50px;
+  margin-top: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container .inform .inform-mes {
+  color: #292828;
+}
+/* 热门推荐 */
+.container .hot {
+  width: 100%;
+  height: 100%;
+  background: url("./image/backgroun1.png") no-repeat;
+  background-size: 100%;
+  min-width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+.container .hot .hot-list {
+  width: 1440px;
+  height: 400px;
+}
+.container .hot .hot-list .hot-list-top {
+  display: flex;
+  padding: 25px 0;
+}
+.container .hot .hot-list .hot-list-top img {
+  padding-right: 20px;
+}
+.container .hot .hot-list .hot-list-top h1 {
+  font-weight: 400;
+}
+.container .hot .hot-list ul {
+  display: flex;
+  justify-content: space-between;
+}
+.container .hot .hot-list ul li {
+  width: 336px;
+  height: 252px;
+  background: #f0f0f0;
+  position: relative;
+}
+.container .hot .hot-list ul li .hot-photo {
+  width: 336px;
+  height: 168px;
+  background: #ffffff;
+}
+.container .hot .hot-list ul li .study-number {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-top: -35px;
+}
+.container .hot .hot-list ul li .study-number img {
+  width: 60px;
+  height: 17px;
+}
+.container .hot .hot-list ul li .message {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #292828;
+  margin: 15px 0 15px 10px;
+}
+.container .hot .hot-list ul li .school {
+  font-size: 12px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+}
+.container .hot .hot-list ul li .school-log {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px 0 10px;
+}
+.container .hot .hot-list ul li .new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  background: #ff6363;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  font-style: italic;
+}
+/* 在线名课 */
+.container .online {
+  width: 1440px;
+  height: 400px;
+}
+
+.container .online .online-title {
+  display: flex;
+  align-items: center;
+}
+.container .online .online-title h1 {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 30px 20px 30px 20px;
+}
+.container .online .online-title h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container .online ul {
+  display: flex;
+  justify-content: space-between;
+}
+.container .online ul li {
+  width: 336px;
+  height: 252px;
+  background: #f0f0f0;
+  position: relative;
+}
+.container .online ul li .online-photo {
+  width: 336px;
+  height: 168px;
+  background: #ffffff;
+}
+.container .online ul li .study-number {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-top: -35px;
+}
+.container .online ul li .message {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #292828;
+  margin: 15px 0 15px 10px;
+}
+.container .online ul li .school {
+  font-size: 12px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+}
+.container .online ul li .school-log {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px 0 10px;
+}
+.container .online ul li .new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  background: #ff6363;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  font-style: italic;
+}
+
+/* 虚拟仿真 */
+.container .virtual {
+  width: 1440px;
+  height: 400px;
+}
+.container .virtual .virtual-title {
+  display: flex;
+  align-items: center;
+}
+.container .virtual .virtual-title h1 {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 30px 20px 30px 20px;
+}
+.container .virtual .virtual-title h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #535353;
+}
+.container .virtual ul {
+  display: flex;
+  justify-content: space-between;
+}
+.container .virtual ul li {
+  width: 336px;
+  height: 252px;
+  background: #f0f0f0;
+  position: relative;
+}
+.container .virtual ul li .virtual-photo {
+  width: 336px;
+  height: 168px;
+  background: #ffffff;
+}
+.container .virtual ul li .study-number {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  margin-top: -35px;
+}
+.container .virtual ul li .message {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #292828;
+  margin: 15px 0 15px 10px;
+}
+.container .virtual ul li .school {
+  font-size: 12px;
+  color: #9f9f9f;
+  display: flex;
+  align-items: center;
+}
+.container .virtual ul li .school-log {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px 0 10px;
+}
+.container .virtual ul li .new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  background: #ff6363;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  font-style: italic;
+}
+/* 开滴滴 */
+.container .didi .didi-img {
+  position: absolute;
+  left: 0;
+  background: url("./image/didi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 200px;
+  /* height需要修改为100% */
+  min-width: 1050px;
+  overflow: hidden;
+}
+/* 政策资讯 */
+.container .policy {
+  width: 1440px;
+  height: 500px;
+  margin-top: 11%;
+}
+.container .policy .policy-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+.container .policy .policy-top .policy-topleft {
+  width: 639px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 0 20px 0;
+}
+.container .policy .policy-top .policy-topleft .topleft-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 155px;
+  height: 100%;
+}
+.container .policy .policy-top .policy-topleft .topleft-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.container .policy .policy-top .policy-topleft .topleft-right a {
+  color: #9f9f9f;
+  font-size: 14px;
+}
+
+.container .policy .policy-top .policy-topright {
+  width: 639px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 0 20px 0;
+}
+.container .policy .policy-top .policy-topright .topright-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+  height: 100%;
+}
+.container .policy .policy-top .policy-topright .topright-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.container .policy .policy-top .policy-topright .topright-right a {
+  color: #9f9f9f;
+  font-size: 14px;
+}
+
+.container .policy .policy-content {
+  width: 1440px;
+  height: 312px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .policy .policy-content .policy-content-left {
+  width: 639px;
+  height: 312px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 这里的图片需要设置一下吗 */
+.container .policy .policy-content .policy-content-left .content-img img {
+  width: 310px;
+  height: 255px;
+  background-repeat: no-repeat;
+}
+
+.container .policy .policy-content .policy-content-left .content-img p {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #292828;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+.container .policy .policy-content .policy-content-left .content-title {
+  width: 300px;
+  height: 312px;
+  background: #ffffff;
+}
+.container .policy .policy-content .policy-content-left .content-title li {
+  color: #292828;
+  opacity: 0.7;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .policy .policy-content .policy-content-left .content-title ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 312px;
+}
+.container .policy .policy-content .policy-content-left .content-title a {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #292828;
+}
+.container .policy .policy-content .policy-line {
+  border-right: 1px solid #9f9f9f;
+  width: 1px;
+  height: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+}
+.container .policy .policy-content .policy-content-right {
+  width: 639px;
+  height: 312px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .policy .policy-content .policy-content-right ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  height: 312px;
+  color: #9f9f9f;
+}
+.container .policy .policy-content .policy-content-right ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  height: 312px;
+  width: 30px;
+  color: #9f9f9f;
+}
+.container .policy .policy-content .policy-content-right ul:nth-last-child(1) .up {
+  color: red;
+}
+.container .policy .policy-content .policy-content-right ul:nth-last-child(1) .down {
+  color: green;
+}
+
+/* 底部信息 */
+.container .footer{
+width: 100%;
+height: 265px;
+background: #30363c;
+min-width: 1440px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .footer .footer-box{
+  width: 1440px;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .footer .footer-left{
+  width: 620px;
+  height: 150px;
+
+}
+
+.container .footer .footer-left .footer-left-top{
+  width: 276px;
+  height: 72px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.container .footer .footer-left .footer-left-top img{
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  float: left;
+  padding-right: 20px;
+}
+.container .footer .footer-left .footer-left-top h1{
+  font-size: 30px;
+  float: left;
+}
+.container .footer .footer-left .footer-left-top h3{
+  font-size: 22px;
+  float: left;
+}
+.container .footer .footer-left .footer-left-down{
+  width: 500px;
+  height: 50px;
+  float: right;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.container .footer .footer-left .footer-left-down .public-security{
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .footer .footer-right{
+  width: 310px;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
